@@ -1079,7 +1079,9 @@ MonoBehaviour:
   recipes:
   - woodwoodwoodstone
   - stonenullstonenull
+  - stonestonestonestone
   recipeResults:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   resultSlot: {fileID: 1863950775}
