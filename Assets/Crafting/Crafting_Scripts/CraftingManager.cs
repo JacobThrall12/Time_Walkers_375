@@ -59,7 +59,7 @@ public class CraftingManager : MonoBehaviour
     public void OnClickSlot(Slot slot)
     {
         slot.item = null;
-        itemList[slot.index] = null;
+        itemList[slot.Index] = null;
         slot.gameObject.SetActive(false);
         CheckForCreatedRecipes();
     }
@@ -95,7 +95,7 @@ public class CraftingManager : MonoBehaviour
                 nearestSlot.GetComponent<Image>().sprite = currentItem.GetComponent<Image>().sprite;
                 nearestSlot.item = currentItem;
 
-                itemList[nearestSlot.index] = currentItem;
+                itemList[nearestSlot.Index] = currentItem;
 
                 currentItem = null;
 

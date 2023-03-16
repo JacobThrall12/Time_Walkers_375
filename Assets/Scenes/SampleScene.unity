@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 195290456}
   - component: {fileID: 195290455}
   - component: {fileID: 195290454}
+  - component: {fileID: 195290457}
   m_Layer: 0
   m_Name: Component Slot 2
   m_TagString: Untagged
@@ -214,6 +215,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195290452}
   m_CullTransparentMesh: 1
+--- !u!114 &195290457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195290452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 766117332}
+          m_TargetAssemblyTypeName: CraftingManager, Assembly-CSharp
+          m_MethodName: OnClickSlot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 195290454}
+            m_ObjectArgumentAssemblyTypeName: Slot, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &369894918
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,13 +792,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 766117329}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
-          m_Mode: 1
+        - m_Target: {fileID: 766117332}
+          m_TargetAssemblyTypeName: CraftingManager, Assembly-CSharp
+          m_MethodName: OnClickSlot
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgument: {fileID: 689297836}
+            m_ObjectArgumentAssemblyTypeName: Slot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1052,7 +1082,7 @@ MonoBehaviour:
   recipeResults:
   - {fileID: 0}
   - {fileID: 0}
-  resultSlot: {fileID: 0}
+  resultSlot: {fileID: 1863950775}
 --- !u!1 &829632211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,6 +1450,7 @@ GameObject:
   - component: {fileID: 1271254086}
   - component: {fileID: 1271254085}
   - component: {fileID: 1271254084}
+  - component: {fileID: 1271254087}
   m_Layer: 0
   m_Name: Component Slot 4
   m_TagString: Untagged
@@ -1499,6 +1530,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271254082}
   m_CullTransparentMesh: 1
+--- !u!114 &1271254087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271254082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 766117332}
+          m_TargetAssemblyTypeName: CraftingManager, Assembly-CSharp
+          m_MethodName: OnClickSlot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1271254084}
+            m_ObjectArgumentAssemblyTypeName: Slot, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1280289033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1778,6 +1838,7 @@ GameObject:
   - component: {fileID: 1612647409}
   - component: {fileID: 1612647408}
   - component: {fileID: 1612647407}
+  - component: {fileID: 1612647410}
   m_Layer: 0
   m_Name: Component Slot 3
   m_TagString: Untagged
@@ -1857,6 +1918,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612647405}
   m_CullTransparentMesh: 1
+--- !u!114 &1612647410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612647405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 766117332}
+          m_TargetAssemblyTypeName: CraftingManager, Assembly-CSharp
+          m_MethodName: OnClickSlot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1612647407}
+            m_ObjectArgumentAssemblyTypeName: Slot, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1649302654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2141,6 +2231,7 @@ GameObject:
   - component: {fileID: 1863950772}
   - component: {fileID: 1863950774}
   - component: {fileID: 1863950773}
+  - component: {fileID: 1863950775}
   m_Layer: 0
   m_Name: Crafted Item Slot
   m_TagString: Untagged
@@ -2206,6 +2297,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863950771}
   m_CullTransparentMesh: 1
+--- !u!114 &1863950775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863950771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029edda7221f6664b9c3dca72a7918ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}
+  Index: 4
 --- !u!1 &2139237537
 GameObject:
   m_ObjectHideFlags: 0
