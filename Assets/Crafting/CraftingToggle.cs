@@ -6,16 +6,20 @@ using UnityEngine.UI;
 public class CraftingToggle : MonoBehaviour
 {
     public GameObject craftingCanvas;
-    public bool craftingOn; 
+    public GameObject craftingCursor;
+
+    public GameObject firstPersonMoving; 
+    public bool isCraftingOn; 
     
     // Start is called before the first frame update
     void Start()
     {
-        craftingOn = false;
-        craftingCanvas.SetActive(false);
+        isCraftingOn = false;
+        craftingCanvas.SetActive(isCraftingOn);
+        craftingCursor.SetActive(isCraftingOn);
 
         GetComponent<FirstPersonLook>().enabled = true;
-
+        firstPersonMoving.GetComponent<FirstPersonMovement>().enabled = !isCraftingOn; 
     }
 
     // Update is called once per frame
@@ -29,18 +33,26 @@ public class CraftingToggle : MonoBehaviour
         if (Input.GetKeyDown("i")) //Can change to different key based on what we decide
         {
             Debug.Log("Toggling Crafting/Inventory.");
-            if(craftingOn == false)
+            if(isCraftingOn == false)
             {
-                craftingOn = true;
-                craftingCanvas.SetActive(true);
+                isCraftingOn = true;
+                craftingCanvas.SetActive(isCraftingOn);
+                craftingCursor.SetActive(isCraftingOn);
 
-                GetComponent<FirstPersonLook>().enabled = false;
+                GetComponent<FirstPersonLook>().enabled = !isCraftingOn;
+
+                Cursor.lockState = CursorLockMode.None;
+                firstPersonMoving.GetComponent<FirstPersonMovement>().enabled = !isCraftingOn; 
             } else
             {
-                craftingOn = false; 
-                craftingCanvas.SetActive(false);
+                isCraftingOn = false; 
+                craftingCanvas.SetActive(isCraftingOn);
+                craftingCursor.SetActive(isCraftingOn);
 
-                GetComponent<FirstPersonLook>().enabled = true;
+                GetComponent<FirstPersonLook>().enabled = !isCraftingOn;
+
+                Cursor.lockState = CursorLockMode.Locked;
+                firstPersonMoving.GetComponent<FirstPersonMovement>().enabled = !isCraftingOn; 
             }
         }
     }
