@@ -16,7 +16,8 @@ public class CraftingToggle : MonoBehaviour
         craftingOn = false;
         craftingCanvas.SetActive(false);
 
-        (FirstPersonGrabber.GetComponent("FirstPersonCamera") as MonoBehaviour).enabled = true; 
+        //GetComponent<script First Person Look>().enabled = true;
+        //(FirstPersonGrabber.GetComponent("FirstPersonCamera") as MonoBehaviour).enabled = true; 
     }
 
     // Update is called once per frame
@@ -35,12 +36,14 @@ public class CraftingToggle : MonoBehaviour
                 craftingOn = true;
                 craftingCanvas.SetActive(true);
 
+                //GetComponent<script First Person Look>().enabled = false;
                 (FirstPersonGrabber.GetComponent("First Person Camera") as MonoBehaviour).enabled = false; 
             } else
             {
                 craftingOn = false; 
                 craftingCanvas.SetActive(false);
 
+                //GetComponent<script First Person Look>().enabled = true;
                 (FirstPersonGrabber.GetComponent("First Person Camera") as MonoBehaviour).enabled = true; 
             }
         }
