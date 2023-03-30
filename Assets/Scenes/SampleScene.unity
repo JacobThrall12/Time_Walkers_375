@@ -1469,7 +1469,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   craftingCanvas: {fileID: 523548434}
   craftingOn: 0
-  FirstPersonGrabber: {fileID: 908401453}
 --- !u!1 &1271254082
 GameObject:
   m_ObjectHideFlags: 0

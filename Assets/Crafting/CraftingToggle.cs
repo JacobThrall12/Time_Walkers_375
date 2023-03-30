@@ -8,16 +8,14 @@ public class CraftingToggle : MonoBehaviour
     public GameObject craftingCanvas;
     public bool craftingOn; 
     
-    public GameObject FirstPersonGrabber; 
-    
     // Start is called before the first frame update
     void Start()
     {
         craftingOn = false;
         craftingCanvas.SetActive(false);
 
-        //GetComponent<script First Person Look>().enabled = true;
-        //(FirstPersonGrabber.GetComponent("FirstPersonCamera") as MonoBehaviour).enabled = true; 
+        GetComponent<FirstPersonLook>().enabled = true;
+
     }
 
     // Update is called once per frame
@@ -36,15 +34,13 @@ public class CraftingToggle : MonoBehaviour
                 craftingOn = true;
                 craftingCanvas.SetActive(true);
 
-                //GetComponent<script First Person Look>().enabled = false;
-                (FirstPersonGrabber.GetComponent("First Person Camera") as MonoBehaviour).enabled = false; 
+                GetComponent<FirstPersonLook>().enabled = false;
             } else
             {
                 craftingOn = false; 
                 craftingCanvas.SetActive(false);
 
-                //GetComponent<script First Person Look>().enabled = true;
-                (FirstPersonGrabber.GetComponent("First Person Camera") as MonoBehaviour).enabled = true; 
+                GetComponent<FirstPersonLook>().enabled = true;
             }
         }
     }
