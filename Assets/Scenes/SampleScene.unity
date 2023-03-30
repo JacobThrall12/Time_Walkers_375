@@ -666,10 +666,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5242010300582068122, guid: f2e0b7ae4dae8cf44955bccd3512b213,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5256384803381100468, guid: f2e0b7ae4dae8cf44955bccd3512b213,
         type: 3}
       propertyPath: m_HDR
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5256384803381100468, guid: f2e0b7ae4dae8cf44955bccd3512b213,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5256384803381100468, guid: f2e0b7ae4dae8cf44955bccd3512b213,
         type: 3}
@@ -684,7 +694,7 @@ PrefabInstance:
     - target: {fileID: 5273061343101857912, guid: f2e0b7ae4dae8cf44955bccd3512b213,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
@@ -1036,6 +1046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 766117331}
   - component: {fileID: 766117332}
+  - component: {fileID: 766117333}
   m_Layer: 0
   m_Name: CraftingManager
   m_TagString: Untagged
@@ -1090,6 +1101,21 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   resultSlot: {fileID: 1863950775}
+--- !u!114 &766117333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766117329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b601f13bd843c478fab56dc2319d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  craftingCanvas: {fileID: 523548434}
+  craftingOn: 0
+  FirstPersonGrabber: {fileID: 908401453}
 --- !u!1 &829632211
 GameObject:
   m_ObjectHideFlags: 0
