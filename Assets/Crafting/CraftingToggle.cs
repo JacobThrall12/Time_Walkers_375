@@ -18,8 +18,10 @@ public class CraftingToggle : MonoBehaviour
         craftingCanvas.SetActive(isCraftingOn);
         craftingCursor.SetActive(isCraftingOn);
 
-        GetComponent<FirstPersonLook>().enabled = true;
-        firstPersonMoving.GetComponent<FirstPersonMovement>().enabled = !isCraftingOn; 
+        firstPersonMoving.GetComponent<PlayerMovement>().enabled = true;
+        firstPersonMoving.GetComponent<PlayerMovement>().enabled = !isCraftingOn; 
+
+        
     }
 
     // Update is called once per frame
@@ -39,20 +41,20 @@ public class CraftingToggle : MonoBehaviour
                 craftingCanvas.SetActive(isCraftingOn);
                 craftingCursor.SetActive(isCraftingOn);
 
-                GetComponent<FirstPersonLook>().enabled = !isCraftingOn;
+                firstPersonMoving.GetComponent<PlayerMovement>().enabled = !isCraftingOn;
 
                 Cursor.lockState = CursorLockMode.None;
-                firstPersonMoving.GetComponent<FirstPersonMovement>().enabled = !isCraftingOn; 
+                firstPersonMoving.GetComponent<PlayerMovement>().enabled = !isCraftingOn; 
             } else
             {
                 isCraftingOn = false; 
                 craftingCanvas.SetActive(isCraftingOn);
                 craftingCursor.SetActive(isCraftingOn);
 
-                GetComponent<FirstPersonLook>().enabled = !isCraftingOn;
+                GetComponent<PlayerMovement>().enabled = !isCraftingOn;
 
                 Cursor.lockState = CursorLockMode.Locked;
-                firstPersonMoving.GetComponent<FirstPersonMovement>().enabled = !isCraftingOn; 
+                firstPersonMoving.GetComponent<PlayerMovement>().enabled = !isCraftingOn; 
             }
         }
     }
